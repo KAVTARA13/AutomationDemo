@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="0d72e2ba-8ec3-4f93-a73e-345da4ced470" activeEnvironment="Default" name="SoapUiPart" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="a32e0044-6279-45d2-bca8-49dd0ec74b7a" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://bookstore.toolsqa.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://bookstore.toolsqa.com</con:endpoint></con:endpoints><con:resource name="User" path="/Account/v1/User" id="e5a7579a-5afe-4321-b8e3-7859140d99e5"><con:settings/><con:parameters><con:parameter><con:name>userName</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>password</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="User 1" id="f8975fb3-4e9b-4ee6-9f3c-6a76a4544bca" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400 406</con:status><con:params/><con:element xmlns:user="https://bookstore.toolsqa.com/Account/v1/User">user:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:user="https://bookstore.toolsqa.com/Account/v1/User">user:Response</con:element></con:representation><con:request name="Request 1" id="55c057b6-8771-426d-a093-662b4ad5b249" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://bookstore.toolsqa.com</con:endpoint><con:request/><con:originalUri>https://bookstore.toolsqa.com/Account/v1/User</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>userName</con:entry><con:entry>password</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="0884cd3c-62f1-406a-8bbe-2239655b78cf" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://bookstore.toolsqa.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://bookstore.toolsqa.com</con:endpoint></con:endpoints><con:resource name="Authorized" path="/Account/v1/Authorized" id="fe347616-8f0a-44e7-9716-d22deab9c6d6"><con:settings/><con:parameters><con:parameter><con:name>userName</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>password</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Authorized 1" id="ab4b8041-cd08-4357-8837-9472e4411a57" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:aut="https://bookstore.toolsqa.com/Account/v1/Authorized">aut:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="7d001b36-0c3d-400c-9fe4-0616e49b08db" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://bookstore.toolsqa.com</con:endpoint><con:request/><con:originalUri>https://bookstore.toolsqa.com/Account/v1/Authorized</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${#Project#password}"/>
+  <con:entry key="userName" value="${#Project#userName}"/>
+</con:parameters><con:parameterOrder><con:entry>userName</con:entry><con:entry>password</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="a9aaa4e2-8d85-4cce-8cdc-40c882b995b5" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://bookstore.toolsqa.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://bookstore.toolsqa.com</con:endpoint></con:endpoints><con:resource name="GenerateToken" path="/Account/v1/GenerateToken" id="f9005db5-5502-47b5-a791-f29a1463a8bd"><con:settings/><con:parameters><con:parameter><con:name>userName</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>password</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="GenerateToken 1" id="a0398beb-81e9-420a-bcd8-2488f7e15124" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:gen="https://bookstore.toolsqa.com/Account/v1/GenerateToken">gen:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:gen="https://bookstore.toolsqa.com/Account/v1/GenerateToken">gen:Fault</con:element></con:representation><con:request name="Request 1" id="c9f7080a-d4bc-4518-95c8-9df81ed55059" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://bookstore.toolsqa.com</con:endpoint><con:request/><con:originalUri>https://bookstore.toolsqa.com/Account/v1/GenerateToken</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>userName</con:entry><con:entry>password</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="c3a8cccc-5f7c-4379-a855-27761976a6ed" name="TestSuit - Login"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="9ffa8dee-d500-4105-8a1f-8c4b8014bf0e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase-PostUser/Negative" searchProperties="true"><con:description/><con:settings/><con:testStep type="groovy" name="InsertValuesInPojectVarT" id="85b5d8ac-9f85-4df4-8619-0e439c358ddd"><con:settings/><con:config><script>def NegNamePass=["alinatkabladze","Automation@!@123","alinatkabladze","Auto@2", "alinatkabladze",""]
+def NegResponseCodeMes=["1204","User exists!","1300",
+"Passwords must have at least one non alphanumeric character, one digit ('0'-'9'), one uppercase ('A'-'Z'), one lowercase ('a'-'z'), one special character and Password must be eight characters or longer.", 
+"1200","UserName and Password required."]
+def Iteration=testRunner.testCase.testSuite.project.getPropertyValue( "iteration") 
+def nextStep = context.testCase.getTestStepByName("CheckNegT")
+
+testRunner.testCase.testSuite.project.setPropertyValue( "NegativeUsername",NegNamePass[Iteration.toInteger()]) 
+testRunner.testCase.testSuite.project.setPropertyValue( "NegativePassword",NegNamePass[Iteration.toInteger()+1]) 
+testRunner.testCase.testSuite.project.setPropertyValue( "NegResponseCode",NegResponseCodeMes[Iteration.toInteger()]) 
+testRunner.testCase.testSuite.project.setPropertyValue( "NegResponseMes",NegResponseCodeMes[Iteration.toInteger()+1])
+nextStep.run(testRunner, context)
+
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="CheckNegT" id="ba05d001-1698-4040-9cec-cfd7444cc7b1"><con:settings/><con:config service="https://bookstore.toolsqa.com" resourcePath="/Account/v1/User" methodName="User 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CheckNegT" id="ba1be44d-2972-4d76-b92e-26f8bc91b7ca" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://bookstore.toolsqa.com</con:endpoint><con:request/><con:originalUri>https://bookstore.toolsqa.com/swagger//Account/v1/User</con:originalUri><con:assertion type="GroovyScriptAssertion" id="59f2d968-3958-40ba-ae1f-611d8c794860" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+def NegResponseCode = messageExchange.modelItem.testStep.testCase.testSuite.project.getPropertyValue( "NegResponseCode" )
+def NegResponseMes = messageExchange.modelItem.testStep.testCase.testSuite.project.getPropertyValue( "NegResponseMes" )
+assert jsonSlurper.code==NegResponseCode
+assert jsonSlurper.message==NegResponseMes</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${#Project#NegativePassword}"/>
+  <con:entry key="userName" value="${#Project#NegativeUsername}"/>
+</con:parameters><con:parameterOrder><con:entry>password</con:entry><con:entry>userName</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="LoopT" id="5513bdb1-784d-4694-bd52-3121084d0eac"><con:settings/><con:config><script>def Iteration=testRunner.testCase.testSuite.project.getPropertyValue( "iteration") 
+def index=Iteration.toInteger();
+log.info index;
+if ( index &lt; 4 )
+{    
+	index+=2;
+	testRunner.testCase.testSuite.project.setPropertyValue( "iteration",index.toString())
+	testRunner.gotoStepByName( 'InsertValuesInPojectVarT' )
+ 
+}
+else
+{   log.info 'minicheba'
+	testRunner.testCase.testSuite.project.setPropertyValue( "iteration",'0') 
+	
+}
+</script></con:config></con:testStep><con:tearDownScript/><con:properties/></con:testCase><con:testCase id="698c039b-d8a5-4618-9232-d1e4b03730a7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase - GenerateToken/Negative" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="b7dd0ff5-f9c5-4014-9e29-a7cd226e533e"><con:settings/><con:config service="https://bookstore.toolsqa.com" methodName="GenerateToken 1" resourcePath="/Account/v1/GenerateToken" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="3b5aa0c2-8c61-44b8-8329-e62038bb4268" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://bookstore.toolsqa.com</con:endpoint><con:request/><con:originalUri>https://bookstore.toolsqa.com/Account/v1/GenerateToken</con:originalUri><con:assertion type="GroovyScriptAssertion" id="c8d229eb-622a-4943-b690-52dc6620452b" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def headers =  messageExchange.getResponseHeaders()
+log.info headers["#status#"]
+assert ['HTTP/1.1 200 OK'] == headers["#status#"]
+def actualStatus =  headers["#status#"].get(0)
+def excelExpectedValue = '200 OK'
+def expectedStatus = 'HTTP/1.1 '+excelExpectedValue
+assert expectedStatus == actualStatus
+
+
+
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+def Code = messageExchange.modelItem.testStep.testCase.testSuite.project.getPropertyValue("result-s")
+//def Token = messageExchange.modelItem.testStep.testCase.testSuite.project.getPropertyValue("tokens")
+//log.info(Code)
+def Mes = messageExchange.modelItem.testStep.testCase.testSuite.project.getPropertyValue( "status-s")
+log.info(Mes)
+
+assert jsonSlurper.token== null
+assert jsonSlurper.expires== null
+assert jsonSlurper.result== Code
+assert jsonSlurper.status== Mes
+
+</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="e1723a4d-6917-40c4-84db-daa9c361a8d4" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="TestAutomation1@#"/>
+  <con:entry key="userName" value="${#Project#USERNAME-S}"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request 2" id="6ab7ffaf-5769-40e9-ada7-2403fc38b57a"><con:settings/><con:config service="https://bookstore.toolsqa.com" methodName="GenerateToken 1" resourcePath="/Account/v1/GenerateToken" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request 2" id="da930314-1320-4000-9e5b-448683b02ed0" mediaType="application/x-www-form-urlencoded" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://bookstore.toolsqa.com</con:endpoint><con:request/><con:originalUri>https://bookstore.toolsqa.com/Account/v1/GenerateToken</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="b2a69eb6-4298-4036-8964-ad899eee1464" name="Valid HTTP Status Codes"><con:configuration><codes>400</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="73634aa5-c46e-4435-ad53-40dcd6a7b05a" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+
+def headers =  messageExchange.getResponseHeaders()
+log.info headers["#status#"]
+assert ['HTTP/1.1 400 Bad Request'] == headers["#status#"]
+def actualStatus =  headers["#status#"].get(0)
+def excelExpectedValue = '400 Bad Request'
+def expectedStatus = 'HTTP/1.1 '+excelExpectedValue
+assert expectedStatus == actualStatus
+
+
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+def Code = messageExchange.modelItem.testStep.testCase.testSuite.project.getPropertyValue("code-s")
+def Mes = messageExchange.modelItem.testStep.testCase.testSuite.project.getPropertyValue( "Mes-s" )
+assert jsonSlurper.code== Code
+assert jsonSlurper.message== Mes</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${#Project#password2}"/>
+  <con:entry key="userName" value="${#Project#USERNAME}"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request 3" id="a74d6acf-babf-42a7-8296-5068b4c46108"><con:settings/><con:config service="https://bookstore.toolsqa.com" methodName="GenerateToken 1" resourcePath="/Account/v1/GenerateToken" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request 3" id="2e5cbb0c-f1b4-4673-ad76-97aced48ac70" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://bookstore.toolsqa.com</con:endpoint><con:request/><con:originalUri>https://bookstore.toolsqa.com/Account/v1/GenerateToken</con:originalUri><con:assertion type="GroovyScriptAssertion" id="7e2c7f57-2698-42c0-b4f8-8d2aceee6f36" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def headers =  messageExchange.getResponseHeaders()
+log.info headers["#status#"]
+assert ['HTTP/1.1 200 OK'] == headers["#status#"]
+def actualStatus =  headers["#status#"].get(0)
+def excelExpectedValue = '200 OK'
+def expectedStatus = 'HTTP/1.1 '+excelExpectedValue
+assert expectedStatus == actualStatus
+
+
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+def Code = messageExchange.modelItem.testStep.testCase.testSuite.project.getPropertyValue("result-s")
+//def Token = messageExchange.modelItem.testStep.testCase.testSuite.project.getPropertyValue("tokens")
+//log.info(Code)
+def Mes = messageExchange.modelItem.testStep.testCase.testSuite.project.getPropertyValue( "status-s")
+log.info(Mes)
+
+assert jsonSlurper.token== null
+assert jsonSlurper.expires== null
+assert jsonSlurper.result== Code
+assert jsonSlurper.status== Mes
+
+</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="d52e1f19-6d5e-4df6-a787-cf81a7846705" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${#Project#PASSWORD4}"/>
+  <con:entry key="userName" value="${#Project#USERNAME-S}"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="fd11ca0f-235b-443e-b7b9-0fe36b0113bb"><con:settings/><con:config><script>def userName = ["ttttt","TestAutomation1@#"]
+def userName1 = ["tttt",""]
+def userName2 = ["alinatkabladze","Automation@!@123"]
+def response = [null,null,"Failed","User authorization failed"]
+def response1 = ["1200","UserName and Password required."]
+
+
+ 
+def nextStep = context.testCase.getTestStepByName("REST Request")
+def nextStep1 = context.testCase.getTestStepByName("REST Request 2")
+def nextStep2 = context.testCase.getTestStepByName("REST Request 3")
+ 
+testRunner.testCase.testSuite.project.setPropertyValue( "userName-S",userName.toString())  
+testRunner.testCase.testSuite.project.setPropertyValue("response",response.toString()) 
+nextStep.run(testRunner, context)
+
+
+testRunner.testCase.testSuite.project.setPropertyValue( "userName1-S",userName1.toString()) 
+testRunner.testCase.testSuite.project.setPropertyValue(" userName1",response1.toString()) 
+
+
+
+nextStep1.run(testRunner, context)
+
+
+testRunner.testCase.testSuite.project.setPropertyValue( "userName-S",userName2.toString()) 
+testRunner.testCase.testSuite.project.setPropertyValue(" response1",response.toString()) 
+
+
+nextStep2.run(testRunner, context)
+
+
+
+
+
+</script></con:config></con:testStep><con:tearDownScript/><con:properties/></con:testCase><con:testCase id="21013897-1247-49b1-ad70-6c37760278e3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase-PostUser/Authorized/GenerateToken" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GenerateRandomUser" id="049500e4-4e0d-4ab0-a8f3-84e8b6250fcf"><con:settings/><con:config><script>import org.apache.commons.lang.RandomStringUtils
+
+String charset = (('A'..'Z') + ('a'..'z')+('0'..'9')).join()
+Integer length = 12
+String randomUser = RandomStringUtils.random(length, charset.toCharArray())
+testRunner.testCase.testSuite.project.setPropertyValue("userNameK", randomUser)</script></con:config></con:testStep><con:testStep type="restrequest" name="CreateUser" id="7c0fb33c-c0a9-4293-a1e0-40bb9393125f"><con:settings/><con:config service="https://bookstore.toolsqa.com" resourcePath="/Account/v1/User" methodName="User 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateUser" id="55c057b6-8771-426d-a093-662b4ad5b249" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://bookstore.toolsqa.com</con:endpoint><con:request/><con:originalUri>https://bookstore.toolsqa.com/Account/v1/User</con:originalUri><con:assertion type="GroovyScriptAssertion" id="0fae1f24-3418-4d38-a94e-f838e5837e3c" name="CheckUsernameValue"><con:configuration><scriptText>import groovy.json.JsonSlurper
+def responseContent = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(responseContent)
+def expectedUserName = context.expand('${#Project#userNameK}')
+def actualUserName=jsonSlurper.username
+assert expectedUserName == actualUserName</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="41f970a3-7b77-45a6-b3a5-19db396dc75c" name="CheckBooksListEmpty"><con:configuration><scriptText>import groovy.json.JsonSlurper
+def responseContent = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(responseContent)
+def books = jsonSlurper.books
+assert books.size()== 0</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${#Project#password}"/>
+  <con:entry key="userName" value="${#Project#userNameK}"/>
+</con:parameters><con:parameterOrder><con:entry>userName</con:entry><con:entry>password</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="CheckAutorized" id="68d85c54-5a08-407f-b169-574ab7a17921"><con:settings/><con:config service="https://bookstore.toolsqa.com" resourcePath="/Account/v1/Authorized" methodName="Authorized 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CheckAutorized" id="7d001b36-0c3d-400c-9fe4-0616e49b08db" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://bookstore.toolsqa.com</con:endpoint><con:request/><con:originalUri>https://bookstore.toolsqa.com/Account/v1/Authorized</con:originalUri><con:assertion type="Simple Contains" id="7cfb3b09-b0ef-437d-bffa-8c5809a24181" name="CheckResponseFalse"><con:configuration><token>false</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${#Project#password}"/>
+  <con:entry key="userName" value="${#Project#userNameK}"/>
+</con:parameters><con:parameterOrder><con:entry>userName</con:entry><con:entry>password</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GenerateToken" id="0afadbf1-82fc-408d-a680-29006d65cdc6"><con:settings/><con:config service="https://bookstore.toolsqa.com" resourcePath="/Account/v1/GenerateToken" methodName="GenerateToken 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GenerateToken" id="c9f7080a-d4bc-4518-95c8-9df81ed55059" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://bookstore.toolsqa.com</con:endpoint><con:request/><con:originalUri>https://bookstore.toolsqa.com/Account/v1/GenerateToken</con:originalUri><con:assertion type="GroovyScriptAssertion" id="a8d3e0a4-e4f4-4629-a7d2-7a63bc084d38" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+def responseContent = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(responseContent)
+def actualStatus=jsonSlurper.status
+def actuelResult = jsonSlurper.result
+assert actualStatus == "Success"
+assert actuelResult == "User authorized successfully."</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${#Project#password}"/>
+  <con:entry key="userName" value="${#Project#userNameK}"/>
+</con:parameters><con:parameterOrder><con:entry>userName</con:entry><con:entry>password</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="CheckAutorizedGeneratedToken" id="22cb830e-b3ca-40bb-a92a-b6d11db555fb"><con:settings/><con:config service="https://bookstore.toolsqa.com" resourcePath="/Account/v1/Authorized" methodName="Authorized 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CheckAutorizedGeneratedToken" id="7d001b36-0c3d-400c-9fe4-0616e49b08db" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://bookstore.toolsqa.com</con:endpoint><con:request/><con:originalUri>https://bookstore.toolsqa.com/Account/v1/Authorized</con:originalUri><con:assertion type="Simple Contains" id="7cfb3b09-b0ef-437d-bffa-8c5809a24181" name="CheckResponseFalse"><con:configuration><token>true</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${#Project#password}"/>
+  <con:entry key="userName" value="${#Project#userNameK}"/>
+</con:parameters><con:parameterOrder><con:entry>userName</con:entry><con:entry>password</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:tearDownScript/><con:properties/></con:testCase><con:properties><con:property><con:name>userName</con:name><con:value>tttt</con:value></con:property><con:property><con:name>password</con:name><con:value>TestAutomation1@#</con:value></con:property><con:property><con:name>token</con:name><con:value>null,null,Failed,User authorization failed.</con:value></con:property><con:property><con:name>result</con:name><con:value>User authorization failed.</con:value></con:property><con:property><con:name>userName1 </con:name><con:value>alinatkabladze</con:value></con:property><con:property><con:name>password1</con:name><con:value>Automation@!@123</con:value></con:property><con:property><con:name>status</con:name><con:value>Failed</con:value></con:property><con:property><con:name>password2</con:name><con:value>""</con:value></con:property><con:property><con:name>code</con:name><con:value>"1200"</con:value></con:property></con:properties><con:tearDownScript/></con:testSuite><con:properties><con:property><con:name>userNameK</con:name><con:value>HVOu7Mszs3Uu</con:value></con:property><con:property><con:name>password</con:name><con:value>[tttt, TestAutomation1@#]</con:value></con:property><con:property><con:name>NegativeUsername</con:name><con:value>alinatkabladze</con:value></con:property><con:property><con:name>NegativePassword</con:name><con:value>Auto@2</con:value></con:property><con:property><con:name>NegResponseCode</con:name><con:value>1300</con:value></con:property><con:property><con:name>NegResponseMes</con:name><con:value>Passwords must have at least one non alphanumeric character, one digit ('0'-'9'), one uppercase ('A'-'Z'), one lowercase ('a'-'z'), one special character and Password must be eight characters or longer.</con:value></con:property><con:property><con:name>Iteration</con:name><con:value>2</con:value></con:property><con:property><con:name>code</con:name><con:value>1200</con:value></con:property><con:property><con:name>status-s</con:name><con:value>Failed</con:value></con:property><con:property><con:name>password-s</con:name><con:value>TestAutomation1@#</con:value></con:property><con:property><con:name>username-s</con:name><con:value>[alinatkabladze, Automation@!@123]</con:value></con:property><con:property><con:name>password4</con:name><con:value>Automation@!@123</con:value></con:property><con:property><con:name>username1</con:name><con:value>alinatkabladze</con:value></con:property><con:property><con:name>response</con:name><con:value>[null, null, Failed, User authorization failed]</con:value></con:property><con:property><con:name> userName</con:name><con:value>[1200, UserName and Password required.]</con:value></con:property><con:property><con:name> response</con:name><con:value>[null, null, Failed, User authorization failed]</con:value></con:property><con:property><con:name>status</con:name><con:value>[null, null, Failed, User authorization failed]</con:value></con:property><con:property><con:name>userName</con:name><con:value>HWwNRiCimBCh</con:value></con:property><con:property><con:name>result-s</con:name><con:value>User authorization failed.</con:value></con:property><con:property><con:name>code-s</con:name><con:value>1200</con:value></con:property><con:property><con:name>Mes-s</con:name><con:value>UserName and Password required.</con:value></con:property><con:property><con:name>userName1-S</con:name><con:value>[tttt, ]</con:value></con:property><con:property><con:name> userName1</con:name><con:value>[1200, UserName and Password required.]</con:value></con:property><con:property><con:name> response1</con:name><con:value>[null, null, Failed, User authorization failed]</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:afterRunScript>/**
+*
+* Below is the TearDown script for SoapUI Project level
+* Which create a custom report in a  given file
+* Modify the variable "reportFileName" below
+*
+**/
+//Modify the file as needed for report file
+//def reportFileName = '/tmp/abctestreport.txt'
+//Adding the below as user wants specific directory
+//Get the project path
+
+def dataFolder =  new com.eviware.soapui.support.GroovyUtils(context).projectPath
+
+//Create today's date for storing response
+def today = new Date().format("yyyy-MM-dd")
+
+def filePrefix = "${dataFolder}/TestReports" as String
+
+//def fileNamePart = new Date().format("yyyy-MM-dd'T'HH.mm.ss")
+
+//creating filename dynamically.
+def reportFileName = "${filePrefix}/Report.txt" as String
+
+
+//NOTE: Not required to edit beyond this point
+
+/**
+* This class holds the test case details
+**/
+class TestCaseResultHolder {
+    def log
+    Map&lt;String, String> properties = [:]
+    boolean status
+
+    def createProperties(testCase) {
+        testCase.getPropertyNames().each { key ->
+            properties[key] = testCase.getPropertyValue(key)
+        }       
+    }
+
+    def getCaseResult(caseRunner, caseName) {
+        log.info "Checking test case status ${caseName}"
+        if ( caseRunner.status.toString() == 'FAILED' ){
+            log.error "Test case $caseName has failed"
+            for ( stepResult in caseRunner?.results ){
+                stepResult.messages.each() { msg -> log.info msg }
+            }
+            return false
+        } else {
+            log.info "${caseName} is passed"
+        }
+        true
+    }
+
+    def buildCaseResult(caseRunner, caseName) {
+        status = getCaseResult(caseRunner, caseName)
+        if (!status) {
+            createProperties(caseRunner.testCase)
+        }
+    }
+
+}
+
+/**
+* This class holds the test suite details
+**/
+class SuiteResultsHolder {
+
+    def log
+    Map&lt;String, TestCaseResultHolder> casaeResults = [:]
+    int testCaseCount = 0
+    int passedCasesCount = 0
+    int failedCasesCount = 0
+
+    def buildSuiteResults(suiteRunner, suiteName){      
+        log.info "Building results of test suite ${suiteName}"
+        for ( caseRunner in suiteRunner?.results ) {
+            def caseName = caseRunner.testCase.name
+            testCaseCount++
+            def tcHolder = new TestCaseResultHolder(log: log)
+            tcHolder.buildCaseResult(caseRunner, caseName)          
+            casaeResults[caseName] = tcHolder
+            if (tcHolder.status) {
+                passedCasesCount++
+            } else {
+                failedCasesCount++
+            }
+        }
+    }
+
+    def getStatus() {
+        (0 &lt; failedCasesCount) ? false : true
+    }
+
+}
+
+/**
+* This class holds the project details
+**/
+class ProjectResultsHolder {
+
+    def log
+    Map&lt;String, SuiteResultsHolder> suiteResults = [:]
+    int suiteCount = 0
+    int passedSuitecount = 0
+    int failedSuiteCount = 0
+
+    def buildProjectResults(projectRunner, projectName) {
+        log.info "Building results of test project ${projectName}"          
+        for(suiteRunner in projectRunner?.results) {
+            def suiteName =  suiteRunner.testSuite.name
+            suiteCount++
+            def suiteResultsHolder = new SuiteResultsHolder(log: log)
+            suiteResultsHolder.buildSuiteResults(suiteRunner, suiteName)
+            suiteResults[suiteName] = suiteResultsHolder
+            if (suiteResultsHolder.status) {
+                passedSuitecount++
+            } else {
+                failedSuiteCount++
+            }
+        }
+    }
+
+    def getStatus() {
+        (0 &lt; failedSuiteCount) ? false : true
+    }
+
+}
+
+//Get the status string based on boolean
+def getResult(status){ status == true ? 'SUCCEED' : 'FAILED'}
+
+//Draws a line
+def drawLine(def letter = '=', def count = 70) { letter.multiply(count)}
+
+//Gets the summary report
+def getSummaryReport(project, projectResultHolder) {
+    def report = new StringBuffer()
+    report.append(drawLine()).append('\n')
+    report.append("\t\t\tTest Execution Summary\n")
+    report.append(drawLine('-', 60)).append('\n')
+    report.append("Project : ${project.name}\n")
+    report.append("Result : ${getResult(projectResultHolder.status)}\n")
+    report.append("Total test suites executed: ${projectResultHolder.suiteCount}\n")
+    report.append("Test suites passed: ${projectResultHolder.passedSuitecount}\n")
+    report.append("Test suites failed: ${projectResultHolder.failedSuiteCount}\n")
+    report.append(drawLine()).append('\n')
+    report
+}
+
+//Gets the test case report
+def getTestCaseReport(testCaseReport) {
+    def report = new StringBuffer()
+    report.append(drawLine('-', 60)).append('\n')
+    report.append("\t\tTest Case Details:\n")
+    report.append(drawLine('-', 60)).append('\n')
+    testCaseReport.each { kase, tcReport ->
+        report.append("Name : ${kase}\n")
+        report.append("Status : ${getResult(tcReport.status)}\n")
+        if (!tcReport.status) {
+            report.append("Properties : ${tcReport.properties.toString()}\n")
+        }
+    }
+    report
+}
+
+//Get the detailed report
+def getDetailedReport(projectResultHolder) {
+    def report = new StringBuffer()
+    report.append(drawLine()).append('\n')
+    report.append("\t\t\tTest Execution Detailed Report\n")
+    report.append(drawLine()).append('\n')
+    projectResultHolder.suiteResults.each { suite, details ->
+        report.append("Test Suite : ${suite}\n")
+        report.append("Result : ${getResult(details.status)}\n")
+        report.append("Total Cases : ${details.testCaseCount}\n")
+        report.append("Cases Passed : ${details.passedCasesCount}\n")
+        report.append("Cases Failed: ${details.failedCasesCount}\n")
+        report.append(getTestCaseReport(details.casaeResults))
+        report.append(drawLine()).append('\n')
+        report.append(drawLine()).append('\n')
+    }
+    report
+}
+
+//Save the contents to a file
+def saveToFile(file, content) {
+    if (!file.parentFile.exists()) {
+        file.parentFile.mkdirs()
+        log.info "Directory did not exist, created"
+    }
+    file.write(content) 
+    assert file.exists(), "${file.name} not created"
+}
+
+def holder = new ProjectResultsHolder(log: log)
+holder.buildProjectResults(runner, project.name)
+
+def finalReport = new StringBuffer()
+finalReport.append(getSummaryReport(project, holder))
+finalReport.append(getDetailedReport(holder))
+
+def reportFile = new File(reportFileName)
+saveToFile(reportFile, finalReport.toString())</con:afterRunScript><con:sensitiveInformation/></con:soapui-project>

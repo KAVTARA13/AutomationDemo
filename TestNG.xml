@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test_suite" parallel="true" thread-count="3" >
+    <test name="Groups">
+        <groups>
+            <define name="Back_ends">
+                <include name="BackEnds"/>
+            </define>
+            <define name="End_to_ends">
+                <include name="EndToEnds"/>
+            </define>
+            <define name="Front_ends">
+                <include name="FrontEnds"/>
+            </define>
+            <run>
+                <include name="Back_ends"/>
+                <include name="End_to_ends"/>
+                <include name="Front_ends"/>
+
+            </run>
+        </groups>
+        <classes>
+            <class name="Tests"/>
+        </classes>
+    </test>
+
+</suite>

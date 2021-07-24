@@ -1,0 +1,1 @@
+mvn clean test -DsuiteXmlFile=TestNG.xml & C:\Users\monolith\scoop\apps\allure\2.13.9\bin\allure.bat generate allure-results --clean -o allure-report-final/allure-report
